@@ -1,3 +1,4 @@
 import { runInTransaction } from './transaction'
+import { runInPoolClient, verifyAtLeastOneRow } from './queries'
 
-export { runInTransaction }
+export { runInTransaction, runInPoolClient, verifyAtLeastOneRow }

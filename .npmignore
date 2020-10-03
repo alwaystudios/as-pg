@@ -12,6 +12,7 @@ tslint.json
 .eslintignore
 .eslint.js
 .nvmrc
-.prettier.json
+.prettierrc.json
 *.sh
 rollup.config.js
+.eslintrc.js
