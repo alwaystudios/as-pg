@@ -1,7 +1,7 @@
 {
   "name": "@alwaystudios/as-pg",
   "author": "Alwaystudios Ltd.",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "license": "MIT",
   "engines": {
     "node": ">=14"

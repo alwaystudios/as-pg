@@ -8,3 +8,10 @@ src/
 jest.config.js
 tsconfig*
 tslint.json
+.editorconfig
+.eslintignore
+.eslint.js
+.nvmrc
+.prettier.json
+*.sh
+rollup.config.js
