@@ -1,6 +1,6 @@
 {
   "name": "as-pg",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "engines": {
     "node": ">=14"
@@ -16,7 +16,8 @@
     "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write '{src,test}/**/*.{js,ts,tsx,json,css,md}'",
     "build": "rollup -c",
-    "clean": "sh cleanup.sh"
+    "clean": "sh cleanup.sh",
+    "publish": "npm publish"
   },
   "husky": {
     "hooks": {
