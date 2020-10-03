@@ -1,7 +1,7 @@
 {
   "name": "@alwaystudios/as-pg",
   "author": "Alwaystudios Ltd.",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "license": "MIT",
   "engines": {
     "node": ">=14"
@@ -18,7 +18,7 @@
     "format": "prettier --write '{src,test}/**/*.{js,ts,tsx,json,css,md}'",
     "build": "rollup -c",
     "clean": "sh cleanup.sh",
-    "publish": "npm publish"
+    "publish": "npm publish --@alwaystudios:registry=https://npm.pkg.github.com/"
   },
   "husky": {
     "hooks": {
