@@ -1,0 +1,10 @@
+.npmrc
+.npmignore
+.gitignore
+.github/
+node_modules/
+coverage/
+src/
+jest.config.js
+tsconfig*
+tslint.json
