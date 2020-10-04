@@ -1,10 +1,10 @@
 {
   "name": "@alwaystudios/as-pg",
   "author": "Alwaystudios Ltd.",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "license": "MIT",
   "engines": {
-    "node": ">=14"
+    "node": ">=10"
   },
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
