@@ -9,8 +9,8 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-          scope: getify
+          scope: alwaystudios
       - run: yarn && yarn build
-      - run: npm publish --@alwaystudios:registry=https://registry.npmjs.org/
+      - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
