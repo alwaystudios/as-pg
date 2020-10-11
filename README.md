@@ -1,5 +1,11 @@
 # as-pg
 
+https://www.npmjs.com/package/@alwaystudios/as-pg
+
+```
+  yarn add @alwaystudios/as-pg
+```
+
 Postgres (pg) helper functions
 
 ## runInTransaction

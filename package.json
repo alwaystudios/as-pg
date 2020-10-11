@@ -1,7 +1,7 @@
 {
   "name": "@alwaystudios/as-pg",
   "author": "Alwaystudios Ltd.",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "license": "MIT",
   "engines": {
     "node": ">=10"
@@ -17,13 +17,13 @@
     "test": "jest --maxWorkers=4 src",
     "install-peers": "install-peers -f",
     "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --write '{src,test}/**/*.{js,ts,tsx,json,css,md}'",
+    "format": "prettier --write 'src/**/*.{js,ts,tsx,json,css,md}'",
     "build": "rollup -c",
     "clean": "sh cleanup.sh"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint",
+      "pre-commit": "yarn lint && yarn format && yarn test",
       "pre-push": "yarn build && yarn test"
     }
   },
