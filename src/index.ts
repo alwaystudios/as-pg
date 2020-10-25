@@ -1,6 +1,13 @@
 import { runInTransaction } from './transaction'
 import { runInPoolClient, verifyAtLeastOneRow } from './queries'
-import { testConnectionPool, testPgClient, testPgPool, testQueryResults } from './test/pgFactories'
+import {
+  testConnectionPool,
+  testPgClient,
+  testPgPool,
+  testQueryResults,
+  testRunInPoolClient,
+  testRunInTransaction,
+} from './test/pgFactories'
 
 export {
   runInTransaction,
@@ -10,4 +17,6 @@ export {
   testPgPool,
   testPgClient,
   testQueryResults,
+  testRunInPoolClient,
+  testRunInTransaction,
 }

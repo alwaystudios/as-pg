@@ -46,3 +46,5 @@ Verifies a query result set to ensure at least one row was affected by a query
 - testPgPool
 - testPgClient
 - testQueryResults
+- testRunInPoolClient
+- testRunInTransaction

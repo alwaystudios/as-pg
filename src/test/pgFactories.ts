@@ -46,3 +46,11 @@ export const testQueryResults = (queryResults: Partial<QueryResult> = {}): Query
   fields: [],
   oid: 1,
 })
+
+export const testRunInPoolClient = (client = testPgClient()) => async <T>(
+  f: (_: PoolClient) => Promise<T>,
+): Promise<T> => f(client)
+
+export const testRunInTransaction = (client = testPgClient()) => async <T>(
+  f: (_: PoolClient) => Promise<T>,
+): Promise<T> => f(client)
