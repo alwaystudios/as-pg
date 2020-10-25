@@ -39,3 +39,10 @@ Verifies a query result set to ensure at least one row was affected by a query
     await client.query(someQuery).then(verifyAtLeastOneRow('my update operation'))
   })
 ```
+
+# Test factories
+
+- testConnectionPool
+- testPgPool
+- testPgClient
+- testQueryResults
