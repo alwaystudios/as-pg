@@ -1,5 +1,7 @@
 # as-pg
 
+A Postgres utilities library
+
 https://www.npmjs.com/package/@alwaystudios/as-pg
 
 ```

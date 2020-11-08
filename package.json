@@ -1,10 +1,11 @@
 {
   "name": "@alwaystudios/as-pg",
   "author": "Alwaystudios Ltd.",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "license": "MIT",
+  "repository": "git@github.com:alwaystudios/as-pg.git",
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
