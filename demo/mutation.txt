@@ -1,0 +1,18 @@
+https://www.graphile.org/
+http://localhost:5000/graphiql
+
+mutation {
+    createPerson(
+      input: {
+        person: {
+          details: { firstName: "Gary", lastName:"Alway"}
+        }
+      }
+    ) {
+      person {
+        nodeId
+        id
+        details
+      }
+    }
+  }

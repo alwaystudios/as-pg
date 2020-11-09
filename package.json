@@ -1,7 +1,7 @@
 {
   "name": "@alwaystudios/as-pg",
   "author": "Alwaystudios Ltd.",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "license": "MIT",
   "repository": "git@github.com:alwaystudios/as-pg.git",
   "engines": {
@@ -29,11 +29,11 @@
     }
   },
   "peerDependencies": {
-    "pg": "^8.3.3"
+    "pg": "^8.4.2"
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
-    "@types/pg": "^7.14.5",
+    "@types/pg": "^7.14.6",
     "@typescript-eslint/eslint-plugin": "^4.3.0",
     "@typescript-eslint/parser": "^4.3.0",
     "eslint": "^7.10.0",
