@@ -29,6 +29,7 @@
     }
   },
   "peerDependencies": {
+    "@alwaystudios/as-utils": "^1.0.11",
     "pg": "^8.4.2"
   },
   "devDependencies": {

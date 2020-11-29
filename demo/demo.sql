@@ -27,7 +27,7 @@ from generate_series(1, 1000000);
 
 select count(id) from person;
 
-CREATE INDEX idxginpersondetails ON person USING gin (details jsonb_path_ops);
+CREATE INDEX idxginpersondetails ON person USING gin (details);
 
 explain select * from person where details @> jsonb_build_object('firstName', 'Gary');
 
