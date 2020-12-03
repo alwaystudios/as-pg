@@ -30,7 +30,8 @@
   },
   "peerDependencies": {
     "@alwaystudios/as-utils": "^1.0.11",
-    "pg": "^8.4.2"
+    "pg": "^8.4.2",
+    "pg-cursor": "^2.5.2"
   },
   "devDependencies": {
     "@types/jest": "^26.0.14",
