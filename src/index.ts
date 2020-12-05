@@ -8,8 +8,12 @@ import {
   testRunInPoolClient,
   testRunInTransaction,
 } from './test/pgFactories'
+import { dbPollerFactory, DbPollerFactoryType, PollerRecordType } from './poller/dbPoller'
 
 export {
+  dbPollerFactory,
+  DbPollerFactoryType,
+  PollerRecordType,
   runInTransaction,
   runInPoolClient,
   verifyAtLeastOneRow,

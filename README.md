@@ -42,6 +42,43 @@ Verifies a query result set to ensure at least one row was affected by a query
   })
 ```
 
+## Poller processor
+
+Creates a database poller process
+
+```
+  const onReceiveData = async <PersonRecord>(records: PersonRecord[]) => {
+    console.log(records.length)
+  }
+
+  const poller = dbPollerFactory<PersonRecord>({
+    pool,
+    tableName: 'person',
+    interval: 200,
+    batchSize: 20,
+    onReceiveData,
+  })
+
+  const processId = poller.schedulePoller()
+
+  .....
+
+  clearInterval(processId) // stop the poller
+```
+
+Factory props are as follows:
+
+```
+  {
+    pool: Pool
+    tableName: string
+    interval: number
+    batchSize: number
+    onReceiveData: <T>(records: T[]) => Promise<void>
+    deleteRecords?: boolean
+  }
+```
+
 # Test factories
 
 - testConnectionPool

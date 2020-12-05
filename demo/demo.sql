@@ -1,5 +1,6 @@
 create table person (
     id bigint generated always as identity, 
+    processed boolean default false,
     primary key(id),
     details jsonb not null
 );
