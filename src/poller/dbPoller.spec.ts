@@ -57,8 +57,6 @@ describe('db poller', () => {
       expect(processPollerRecords).toHaveBeenCalledWith(client, 'test', recordIds, false)
       expect(onReceiveData).toHaveBeenCalledWith(records)
     })
-
-    clearInterval(intervalId)
   })
 
   it('continues to process on error', async () => {
@@ -86,7 +84,5 @@ describe('db poller', () => {
       expect(processPollerRecords).toHaveBeenCalledWith(client, 'test', recordIds, false)
       expect(onReceiveData).toHaveBeenCalledWith(records)
     })
-
-    clearInterval(intervalId)
   })
 })
